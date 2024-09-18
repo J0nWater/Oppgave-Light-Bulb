@@ -1,5 +1,4 @@
 let lightOff = true;
-let switchOff = true;
 
 updateView()
 function updateView(){
@@ -16,11 +15,10 @@ function updateView(){
 }
 function changeLightStatus(){
     lightOff = !lightOff;
-    switchOff = !switchOff;
     changeLightAndSwitch()
 }
 function changeLightAndSwitch(){
-    if(lightOff == true && switchOff == true && lightOff == true){
+    if(lightOff == true){
         document.getElementById('lightOffPic').src="lightBulbOff.png";
         document.getElementById('toggleSwitch').src="switchOff.png";
         document.getElementById('lightText').innerHTML = "Before there was darkness.";
